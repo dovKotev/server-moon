@@ -11,7 +11,7 @@ const users = require("./users/routes/routes");
 const cards = require("./cards/routes/routes");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors("https://moon-light-api.onrender.com"));
 app.use(morgan());
 
 app.use("/api/users", users);
